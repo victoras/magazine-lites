@@ -1,0 +1,136 @@
+/* ==========================================================================
+/* ===== Footer  ===== */
+/*========================================================================== */
+
+
+/*--------------------------------------------------------------
+	# Footer
+--------------------------------------------------------------*/
+
+#footer {
+
+}
+
+/*--------------------------------------------------------------
+	## Footer Widgets
+--------------------------------------------------------------*/
+
+#footer-widgets {
+	background: $primaryColor;
+	padding: 80px 0;
+	color: rgba( 255, 255, 255, 0.6 );
+}
+
+#footer-widgets .wrapper {
+
+}
+
+	#footer-widgets .widget {
+		margin-top: 35px;
+	}
+
+	#footer-widgets .widget:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	#footer-widgets .widget:nth-child(-n+3) {
+		margin-top: 0;
+	}
+
+		#footer-widgets .widget-title {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 25px;
+			color: #fff;
+		}
+
+		#footer-widgets .widget-title:after {
+			content: " ";
+			display: block;
+			height: 2px;
+			width: 90px;
+			background: $accentColor;
+			margin-top: 10px;
+		}
+
+/*--------------------------------------------------------------
+	## Footer Bottom
+--------------------------------------------------------------*/
+
+#footer-bottom {
+	padding: 30px 0;
+}
+
+	/**
+	 * Footer Copyright
+	 */
+
+	#footer-copyright {
+		float: left;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1;
+		font-family: "Montserrat";
+		text-transform: uppercase;
+	}
+
+		#footer-copyright a {
+			font-weight: bold;
+		}
+
+	/**
+	 * Footer Navigation
+	 */
+
+	#footer-navigation {
+		float: right;
+		font-size: 0;
+		line-height: 1;
+	}
+
+		#footer-navigation ul,
+		#footer-navigation li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+			/* Top level item */
+			#footer-navigation .menu > li {
+				display: inline-block;
+				position: relative;
+				z-index: 99998;
+				margin-left: 25px;
+			}
+
+				/* Top level item anchor */
+				#footer-navigation .menu > li > a {
+					display: inline-block;
+					text-decoration: none;
+					vertical-align: middle;
+					color: rgba( 0, 0, 0, 0.8 );
+					font-size: 12px;
+					font-weight: normal;
+					font-family: "Montserrat", serif;
+					line-height: inherit;
+					text-transform: uppercase;
+				}
+
+				/* Top level item anchor hover */
+				#footer-navigation .menu > li > a:hover {
+					color: #000;
+				}
+
+				/* Top level item anchor current */
+				#footer-navigation .menu > li.current-menu-item > a,
+				#footer-navigation .menu > li.current-menu-ancestor > a {
+					color: #000;
+				}
+
+		/* Submenu */
+		#footer-navigation .menu ul {
+			display: none;
+		}

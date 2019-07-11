@@ -1,0 +1,359 @@
+/*--------------------------------------------------------------
+	# Responsive
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	## Medium Monitors
+--------------------------------------------------------------*/
+
+@media only screen and ( min-width: 1426px ) and ( max-width: 1700px )  {
+
+	/* post s3 */
+	body .post-s3-main {
+		padding: 20px;
+	}
+
+}
+
+/*--------------------------------------------------------------
+	## Normal Monitors
+--------------------------------------------------------------*/
+
+@media only screen and ( min-width: 1281px ) and ( max-width: 1425px )  {
+
+	/* featured 2 */
+	body #featured-2 {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	/* post s3 */
+	body .post-s3-main {
+		padding: 20px;
+	}
+	body .post-s3-cats {
+		display: none;
+	}
+
+
+
+}
+
+/*--------------------------------------------------------------
+	## Smaller Monitors
+--------------------------------------------------------------*/
+
+@media only screen and ( min-width: 1024px ) and ( max-width: 1280px )  {
+
+	body .wrapper {
+		max-width: 940px;
+	}
+
+	/* post s1 */
+	body .layout-classic-v1 .post-s1-thumb {
+		width: 200px;
+	}
+
+	/* featured 2 */
+	body #featured-2 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* post s3 */
+	body .post-s3-main {
+		padding: 15px;
+	}
+	body .post-s3-cats {
+		display: none;
+	}
+	body .post-s3-title {
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	body #featured-2-secondary .post-s3-title {
+		font-size: 16px;
+	}
+	body .post-s3-excerpt {
+		display: none;
+	}
+
+	.header_banner {
+		width: 100%;
+		float: left;
+		margin-top: 20px;
+	}
+
+}
+
+/*--------------------------------------------------------------
+	## Tablets
+--------------------------------------------------------------*/
+
+@media only screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+
+	body .wrapper {
+		max-width: 748px;
+	}
+
+	/* header */
+	body #top-bar-navigation {
+		display: none;
+	}
+	body #top-bar-mobile-navigation {
+		display: block;
+	}
+	body #navigation {
+		display: none;
+	}
+	body #mobile-navigation {
+		display: block;
+	}
+
+	/* post s1 */
+	body .layout-classic-v1 .post-s1-thumb {
+		width: 100px;
+	}
+	body .post-s1-title {
+		font-size: 22px;
+	}
+
+	/* featured 2 */
+	body #featured-2 {
+		padding: 0;
+	}
+
+	/* post s3 */
+	body .post-s3-main {
+		padding: 15px;
+	}
+	body .post-s3-cats {
+		display: none;
+	}
+	body .post-s3-title {
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+	body #featured-2-secondary .post-s3-title {
+		font-size: 16px;
+	}
+	body .post-s3-title:after {
+		display: none;
+	}
+	body .post-s3-excerpt {
+		display: none;
+	}
+	body .post-s3-meta {
+		display: none;
+	}
+
+	/* single */
+	body .page-title,
+	body .blog-post-single-title {
+		font-size: 30px;
+	}
+
+	.header_banner {
+		width: 100%;
+		float: left;
+		margin-top: 20px;
+	}
+}
+
+/*--------------------------------------------------------------
+	## Phones ( landscape + portrait )
+--------------------------------------------------------------*/
+
+@media only screen and ( max-width: 767px ) {
+
+	/* columns */
+
+	body .col {
+		margin-right: 0;
+		width: 100% !important;
+	}
+
+	/* header */
+	body #header {
+
+	}
+		body #top-bar-navigation {
+			display: none;
+		}
+		body #top-bar-mobile-navigation {
+			display: block;
+		}
+		body #navigation {
+			display: none;
+		}
+		body #mobile-navigation {
+			display: block;
+			float: none;
+		}
+		body #logo {
+			float: none;
+		}
+
+	/* main */
+	body #main {
+		padding: 50px 0;
+	}
+
+	/* post s1 */
+	body .layout-classic-v1 .post-s1-thumb {
+		width: auto;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+		background: #f8f8f8;
+	}
+		body .layout-classic-v1 .post-s1-thumb img {
+			width: auto;
+		}
+	body .post-s1-main {
+		float: none;
+		overflow: visible;
+	}
+		body .post-s1-title {
+			font-size: 22px;
+		}
+
+	/* featured 2 */
+	body #featured-2 {
+		padding: 0;
+	}
+		body #featured-2-primary {
+			width: auto;
+			float: none;
+		}
+		body #featured-2-secondary {
+			width: auto;
+			float: none;
+			overflow: hidden;
+		}
+			body #featured-2-secondary .post-s3 {
+				float: left;
+				width: 50%;
+			}
+				body #featured-2-secondary .post-s3-title {
+					font-size: 16px;
+				}
+
+	/* post s3 */
+	body .post-s3-main {
+		padding: 20px;
+	}
+		body .post-s3-cats {
+			display: none;
+		}
+		body .post-s3-title {
+			font-size: 16px;
+		}
+		body #featured-2-secondary .post-s3-title {
+			margin-bottom: 0;
+		}
+		body #featured-2-secondary .post-s3-title:after {
+			display: none;
+		}
+		body #featured-2-secondary .post-s3-meta {
+			display: none;
+		}
+		body .post-s3-excerpt {
+			display: none;
+		}
+
+	/* single */
+	body .page-title,
+	body .blog-post-single-title {
+		font-size: 25px;
+	}
+
+	/* sidebar */
+	body #sidebar {
+		margin-top: 50px;
+	}
+
+	/* footer */
+	body #footer-widgets {
+		padding: 30px 0;
+	}
+		body #footer-widgets .widget {
+			margin-top: 35px !important;
+		}
+		body #footer-widgets .widget:first-child {
+			margin-top: 0 !important;
+		}
+	body #footer-copyright,
+	body #footer-navigation {
+		float: none;
+	}
+	body #footer-navigation {
+		margin-top: 20px;
+		text-align: center;
+	}
+		body #footer-navigation .menu > li {
+			margin: 0 10px;
+		}
+
+	/* other */
+	body .comment .children {
+		margin-left: 0;
+	}
+
+	body blockquote {
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	body .post-s2-thumb img {
+		width: 100%;
+	}
+
+	.header_banner {
+		display: none;
+	}
+
+}
+
+/*--------------------------------------------------------------
+	## Phones ( landscape )
+--------------------------------------------------------------*/
+
+@media only screen and ( min-width: 480px ) and ( max-width: 767px ) {
+
+	body .wrapper {
+		max-width: 420px;
+	}
+
+}
+
+/*--------------------------------------------------------------
+	## Phones ( portrait )
+--------------------------------------------------------------*/
+
+@media only screen and ( max-width: 479px ) {
+
+	body .wrapper {
+		max-width: 300px;
+	}
+
+	/* featured 2 */
+	body #featured-2-secondary .post-s3 {
+		width: 100%;
+	}
+	body .post-s3-title,
+	body #featured-2-secondary .post-s3-title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	body .post-s3-title:after,
+	body #featured-2-secondary .post-s3-title:after {
+		display: block;
+	}
+	body .post-s3-meta,
+	body #featured-2-secondary .post-s3-meta {
+		display: block;
+	}
+
+}

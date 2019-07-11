@@ -1,0 +1,168 @@
+/* ==========================================================================
+/* ===== Widgets  ===== */
+/*========================================================================== */
+
+
+/*--------------------------------------------------------------
+	## Sidebar
+--------------------------------------------------------------*/
+
+#sidebar {
+	position: relative;
+	word-break: break-word;
+}
+
+	#sidebar .widget {
+		margin-top: 35px;
+	}
+
+	#sidebar .widget:first-child {
+		margin-top: 0;
+	}
+
+		#sidebar .widget-title {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 25px;
+		}
+
+		#sidebar .widget-title:after {
+			content: " ";
+			display: block;
+			height: 2px;
+			width: 90px;
+			background: #ddd;
+			margin-top: 10px;
+		}
+
+/*--------------------------------------------------------------
+	# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+
+}
+
+/*--------------------------------------------------------------
+	# About Widget
+--------------------------------------------------------------*/
+
+.about-image {
+	img{
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+}
+
+
+
+
+/*--------------------------------------------------------------
+	## Widget - Search
+--------------------------------------------------------------*/
+
+.widget_search .search-form {
+	position: relative;
+}
+
+.widget_search input[type="search"] {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.widget_search input[type="submit"] {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 1px solid $accentColor;
+}
+
+/*--------------------------------------------------------------
+	## Widget - Instagram
+--------------------------------------------------------------*/
+
+.instagram-widget-images {
+	overflow: hidden;
+}
+
+	.instagram-widget-image {
+		float: left;
+		width: 25%;
+	}
+
+		.instagram-widget-image img {
+			display: block;
+		}
+
+/*--------------------------------------------------------------
+	## Widget - Social
+--------------------------------------------------------------*/
+
+.social-widget {
+
+}
+
+	.social-widget a {
+		display: block;
+		font-size: 12px;
+		color: #222;
+		font-family: "Montserrat";
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 40px;
+		margin-top: 15px;
+		background: #f8f8f8;
+	}
+
+	.social-widget a:first-child {
+		margin-top: 0;
+	}
+
+		.social-widget .fa {
+			display: inline-block;
+			width: 40px;
+			line-height: 40px;
+			background: rgba( 0, 0, 0, 0.05 );
+			text-align: center;
+			margin-right: 15px;
+		}
+
+/*--------------------------------------------------------------
+	## Widget - Posts
+--------------------------------------------------------------*/
+
+.posts-list-widget {
+
+}
+
+	.posts-list-widget .post-s2:last-child {
+		margin-bottom: 0;
+	}
+
+/*--------------------------------------------------------------
+	## Widget - Tag Cloud
+--------------------------------------------------------------*/
+
+.widget .tagcloud {
+	font-size: 0;
+	line-height: 0;
+}
+
+	.widget .tagcloud a {
+		display: inline-block;
+		line-height: 30px;
+		padding: 0 10px;
+		background: $accentColor;
+		color: #fff;
+		font-family: "Montserrat";
+		font-size: 12px !important;
+		font-weight: bold !important;
+		text-transform: uppercase;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}

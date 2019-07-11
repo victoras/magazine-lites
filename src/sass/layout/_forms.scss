@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+	## Forms
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	## Forms
+--------------------------------------------------------------*/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	line-height: 45px;
+	color: #fff;
+	font-size: 13px;
+	font-family: "Montserrat";
+	font-weight: bold;
+	background: $accentColor;
+	padding: 0 22px;
+	margin: 0;
+	border-radius: 0;
+	text-transform: none;
+	text-transform: uppercase;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	background: rgb(239, 239, 239);
+    border: 0;
+	color: #4d4d4d;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: "Poppins", sans-serif;
+	line-height: 1.4;
+	padding: 13px;
+	max-width: 100%;
+	box-sizing: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	color: #4d4d4d;
+}
+
+textarea {
+	width: 100%;
+}
+
+
+
+/*--------------------------------------------------------------
+	## Contact Form 7
+--------------------------------------------------------------*/
+
+body .wpcf7 {
+	padding: 40px;
+	border: 1px solid #eee;
+}
+
+.wpcf7 label {
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+body input[type="text"],
+body input[type="email"],
+textarea {
+
+}

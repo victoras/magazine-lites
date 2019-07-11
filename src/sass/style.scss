@@ -1,0 +1,60 @@
+/*
+Theme Name: Magazine Lites
+Theme URI: https://wplook.com/product/themes/free/magazine-lites-wordpress-theme/
+Author: WPlook Themes
+Author URI: https://wplook.com
+Description: Magazine is a clean and well coded blogging theme with several homepage layouts
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: LICENSE
+Text Domain: magazine-lites
+Tags: blog, news, grid-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, theme-options, translation-ready
+
+==========================================================================
+===== Table Of Content  =====
+==========================================================================
+
+*/
+
+//	The utils/ folder gathers all Sass tools and helpers used across the project.
+//	Every global variable, function, mixin and placeholder should be put in here.
+
+	@import 'utils/themesettings.scss';
+
+//	The base/ folder holds what we might call the boilerplate code for the project.
+//	In there, you might find the some typographic rules, and some standard styles for commonly used HTML elements.
+
+	@import 'base/general.scss';
+	@import 'base/typography.scss';
+
+//	The layout/ folder contains everything that takes part in laying out the site or application.
+//	This folder could have stylesheets for the main parts of the site (header, footer, menu, sidebar…)
+
+	@import 'layout/columns.scss';
+	@import 'layout/header.scss';
+	@import 'layout/menu.scss';
+	@import 'layout/post.scss';
+	@import 'layout/page.scss';
+	@import 'layout/sections.scss';
+	@import 'layout/galleries.scss';
+	@import 'layout/comments.scss';
+	@import 'layout/widgets.scss';
+	@import 'layout/nav_post.scss';
+	@import 'layout/elements.scss';
+	@import 'layout/owl.scss';
+	@import 'layout/footer.scss';
+	@import 'layout/buttons.scss';
+	@import 'layout/forms.scss';
+	@import 'layout/sociallinks.scss';
+	@import 'layout/forms.scss';
+
+// Responsive
+	@import 'layout/responsive.scss';
+
+//	If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page.
+
+	//@import 'page/contact.scss';
+
+// Plugins
+	@import 'plugins/woocommerce.scss';

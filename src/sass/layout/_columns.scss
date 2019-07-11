@@ -1,0 +1,69 @@
+
+/*--------------------------------------------------------------
+	# Columns System
+--------------------------------------------------------------*/
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.col {
+	display: block;
+	float: left;
+	margin-right: 3.42%;
+}
+
+body.rtl .col {
+	float: right;
+	margin-left: 3.42%;
+	margin-right: 0;
+}
+
+.col-1 { width: 5.198%; }
+.col-2 { width: 13.81%; }
+.col-3 { width: 22.43%; }
+.col-4 { width: 31.05%; }
+.col-5 { width: 39.67%; }
+.col-6 { width: 48.29%; }
+.col-7 { width: 56.90%; }
+.col-8 { width: 65.52%; }
+.col-9 { width: 74.14%; }
+.col-10 { width: 82.76%; }
+.col-11 { width: 91.38%; }
+.col-12 { width: 100%; }
+
+.col-last {
+	margin-right: 0;
+}
+
+body.rtl .col-last {
+	margin-left: 0;
+}
+
+.col-first {
+	clear: both;
+}
+
+.no-col-spacing .col { margin: 0; }
+.no-col-spacing .col-1 { width: 8.33333%; }
+.no-col-spacing .col-2 { width: 16.66666%; }
+.no-col-spacing .col-3 { width: 25%; }
+.no-col-spacing .col-4 { width: 33.33333%; }
+.no-col-spacing .col-5 { width: 41.66666%; }
+.no-col-spacing .col-6 { width: 50%; }
+.no-col-spacing .col-7 { width: 58.33333%; }
+.no-col-spacing .col-8 { width: 66.66666%; }
+.no-col-spacing .col-9 { width: 75%; }
+.no-col-spacing .col-10 { width: 83.33333%; }
+.no-col-spacing .col-11 { width: 91.66666%; }
+.no-col-spacing .col-12 { width: 100%; }
+
+.masonry-item.col {
+	margin-right: 0;
+}
+
+.owl-carousel .col {
+	width: auto;
+	margin-right: 0;
+}

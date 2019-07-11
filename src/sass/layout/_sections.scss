@@ -1,0 +1,126 @@
+/* ==========================================================================
+/* ===== Sections  ===== */
+/*========================================================================== */
+
+
+/*--------------------------------------------------------------
+	# Featured 1
+--------------------------------------------------------------*/
+
+#featured-1 {
+	background: $primaryColor;
+	overflow: hidden;
+	position: relative;
+	padding: 5px;
+}
+
+	#featured-1 .wrapper {
+		position: relative;
+	}
+
+	#featured-1 .owl-carousel .owl-stage-outer {
+		overflow: visible;
+	}
+
+	#featured-1 .owl-item {
+		opacity: 0.2;
+		transition: opacity .5s;
+	}
+
+	#featured-1 .owl-item.active {
+		opacity: 1;
+	}
+
+	.carousel-go-prev-overlay,
+	.carousel-go-next-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 1000px;
+		z-index: 9999;
+		cursor: pointer;
+	}
+
+	.carousel-go-prev-overlay {
+		right: 100%;
+	}
+
+	.carousel-go-next-overlay {
+		left: 100%;
+	}
+
+	#featured-1 .post-s2 {
+		margin-bottom: 0;
+	}
+
+		#featured-1 .post-s2-thumb {
+			margin-bottom: 0;
+		}
+
+			#featured-1 .post-s2-cats a {
+				border-color: $primaryColor;
+			}
+
+		#featured-1 .post-s2-main {
+			padding: 25px;
+		}
+
+			#featured-1 .post-s2-title {
+				color: #fff;
+			}
+
+			#featured-1 .post-s2-excerpt {
+				display: none;
+			}
+
+			#featured-1 .post-s2-meta {
+				color: rgba( 255, 255, 255, 0.5 );
+			}
+
+/*--------------------------------------------------------------
+	# Featured 2
+--------------------------------------------------------------*/
+
+#featured-2 {
+	position: relative;
+	overflow: hidden;
+	padding: 40px;
+	background: $primaryColor;
+
+}
+
+	#featured-2 .wrapper {
+		position: relative;
+	}
+
+	#featured-2-inner {
+
+	}
+
+		#featured-2-primary {
+			float: left;
+			width: 66.66%;
+			padding: 0 4px;
+		}
+
+			#featured-2-primary .post-s3-thumb img {
+				border-radius: 3px 0 0 0;
+			}
+
+		#featured-2-secondary {
+			float: left;
+			width: 33.33%;
+			padding: 0 2px;
+		}
+
+			#featured-2-secondary .post-s3:first-child .post-s3-thumb img {
+				border-radius: 0 3px 0 0;
+			}
+
+			#featured-2-secondary .post-s3-title {
+				font-size: 20px;
+			}
+
+			#featured-2-secondary .post-s3-excerpt {
+				display: none;
+			}

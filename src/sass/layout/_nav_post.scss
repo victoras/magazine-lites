@@ -1,0 +1,57 @@
+//* ==========================================================================
+//* ===== Post Navigation  ===== */
+//*========================================================================== */
+
+/*--------------------------------------------------------------
+	## Pagination
+--------------------------------------------------------------*/
+
+.pagination {
+	margin-top: 70px;
+	text-align: center;
+
+
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+}
+	.pagination-type-numbered li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+		.pagination-load-more a,
+		.pagination-type-numbered a {
+			display: inline-block;
+			background: $accentColor;
+			border: 0;
+			color: #fff;
+			font-size: 14px;
+			font-weight: 900;
+			line-height: 40px;
+			text-transform: uppercase;
+			padding: 0 20px;
+			font-family: "Montserrat";
+			transition: all 0.3s ease;
+			&:hover {
+				background: #000;
+			}
+		}
+
+		.pagination-load-more.inactive a,
+		.pagination-type-numbered .inactive a {
+			background-color: #e4e4e4;
+			color: #979797;
+			transition: all 0.3s ease;
+
+			&:hover {
+				background: #000;
+				color: #fff;
+			}
+		}
+
+			.pagination-load-more .fa {
+				margin-right: 10px;
+			}

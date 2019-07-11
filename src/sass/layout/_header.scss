@@ -1,0 +1,178 @@
+/* ==========================================================================
+/* ===== Toolbar  ===== */
+/*========================================================================== */
+
+/*--------------------------------------------------------------
+	# Top Bar
+--------------------------------------------------------------*/
+
+#top-bar {
+	background: #0a0a0a;
+	line-height: 42px;
+	font-size: 0;
+}
+
+/*--------------------------------------------------------------
+	## Top Bar Search
+--------------------------------------------------------------*/
+
+#top-bar-search {
+	float: right;
+	position: relative;
+
+	.search-field {
+		height: 42px;
+		vertical-align: middle;
+		background: rgba( 255, 255, 255, 0.1 );
+		color: #fff;
+		font-family: "Montserrat";
+		font-size: 11px;
+		text-transform: uppercase;
+		width: 200px;
+	}
+
+	.search-submit {
+		display: none;
+	}
+
+	.fa {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		color: rgba( 255, 255, 255, 0.8 );
+		font-size: 12px;
+	}
+}
+
+/*--------------------------------------------------------------
+	## Top Bar Social
+--------------------------------------------------------------*/
+#top-bar-social {
+	float: right;
+	position: relative;
+	font-size: 1rem;
+
+
+	a {
+		margin-left: 10px;
+
+		.fa {
+			background: transparent;
+			color: #fff;
+		}
+
+
+	}
+
+	.social-link-twitter:hover .fa{
+		color: #1da1f2;
+	}
+	.social-link-facebook:hover .fa{
+		color: #3b5998;
+	}
+	.social-link-youtube:hover .fa{
+		color: #FF0000;
+	}
+	.social-link-vimeo:hover .fa{
+		color: #1ab7ea;
+	}
+	.social-link-tumblr:hover .fa{
+		color: #35465c;
+	}
+	.social-link-pinterest:hover .fa{
+		color: #BD081C;
+	}
+	.social-link-linkedin:hover .fa{
+		color: #0077b5;
+	}
+	.social-link-instagram:hover .fa{
+		color: #C32AA3;
+	}
+	.social-link-github:hover .fa{
+		color: #c9510c;
+	}
+	.social-link-googleplus:hover .fa{
+		color: #DB4437;
+	}
+	.social-link-dribbble:hover .fa{
+		color: #ea4c89;
+	}
+	.social-link-dropbox:hover .fa{
+		color: #007ee5;
+	}
+	.social-link-flickr:hover .fa{
+		color: #0063dc;
+	}
+	.social-link-foursquare:hover .fa{
+		color: #f94877;
+	}
+	.social-link-behance:hover .fa{
+		color: #1769ff;
+	}
+	.social-link-vine:hover .fa{
+		color: #00b488;
+	}
+	.social-link-rss:hover .fa{
+		color: #f26522;
+	}
+	.social-link-email:hover .fa{
+		color: #ef7583;
+	}
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+	# Header
+--------------------------------------------------------------*/
+
+#header {
+	padding: 40px 0 0 0;
+	background: #fff;
+}
+
+	#header .wrapper {
+		position: relative;
+	}
+
+.header_banner {
+	float: right;
+}
+/*--------------------------------------------------------------
+	## Logo
+--------------------------------------------------------------*/
+
+#logo {
+	position: relative;
+	line-height: 0;
+	float: left;
+	margin-top: 10px;
+}
+
+	#logo a,
+	#logo img {
+		display: inline-block;
+	}
+
+	#logo .site-title {
+		color: $accentColor;
+		font-family: "Roboto";
+		font-weight: 700;
+		font-size: 34px;
+		line-height: 1;
+		letter-spacing: -1px;
+		margin-bottom: 10px;
+	}
+
+		#logo .site-title a {
+			color: inherit;
+		}
+
+	#logo .site-description {
+		color: #828992;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1;
+	}

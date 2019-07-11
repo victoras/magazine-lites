@@ -1,0 +1,183 @@
+/* ==========================================================================
+/* ===== Comments  ===== */
+/*========================================================================== */
+
+
+/*--------------------------------------------------------------
+	## Comments
+--------------------------------------------------------------*/
+
+.comments-area {
+	margin-top: 50px;
+}
+
+.comments-section-heading {
+	margin-bottom: 20px;
+}
+
+	.comments-section-heading-title {
+		font-size: 25px;
+		font-weight: bold;
+		float: left;
+		margin: 0;
+	}
+
+	.comments-section-heading-title:after {
+		content: " ";
+		display: block;
+		height: 3px;
+		width: 90px;
+		background: rgba( 0, 0, 0, 0.1 );
+		margin-top: 10px;
+	}
+
+.comments-area ul,
+.comments-area ol,
+.comments-area li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.comment {
+
+}
+
+.comments-area li.comments-pingback,
+.comments-area li.comments-trackback {
+	margin-bottom: 10px;
+	font-size: 13px;
+	background: #fff;
+	padding: 10px;
+}
+
+	.comment-inner {
+		background: #fff;
+		padding: 35px;
+		border: 1px solid #eee;
+		margin-bottom: 25px;
+	}
+
+		.comment-author-avatar {
+			float: left;
+			margin-right: 15px;
+			width: 40px;
+		}
+
+			.comment-author-avatar img {
+				border-radius: 50%;
+				display: block;
+			}
+
+		.comment-info {
+			margin-bottom: 20px;
+		}
+
+			.comment-meta {
+				float: left;
+				margin-top: 5px !important
+			}
+
+				.comment-meta-author {
+					display: block;
+					color: $accentColor;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 1;
+					margin-bottom: 4px !important;
+				}
+
+				.comment-meta-date {
+					display: block;
+					font-size: 12px;
+					line-height: 1;
+				}
+
+			.comment-reply {
+				float: right;
+			}
+
+				.comment-reply a {
+					line-height: 40px;
+					display: inline-block;
+					font-size: 12px;
+					font-weight: bold;
+					font-family: "Montserrat";
+					text-transform: uppercase;
+				}
+
+		.comment-main {
+
+		}
+
+	.comment .children {
+		margin-left: 80px;
+	}
+
+	.comments-no-comments {
+		margin-bottom: 20px;
+	}
+
+.comment-respond {
+	background: #fff;
+	padding: 35px;
+	border: 1px solid #eee;
+}
+
+.comment-list .comment-respond {
+	margin-bottom: 25px;
+}
+
+	.comment-reply-title {
+		margin: 0;
+		padding: 0;
+		color: #232323;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+
+	.comment-reply-title:after {
+		content: " ";
+		display: block;
+		height: 3px;
+		width: 90px;
+		background: rgba( 0, 0, 0, 0.1 );
+		margin-top: 10px;
+	}
+
+	.comment-respond .logged-in-as,
+	.comment-notes {
+		font-size: 14px;
+	}
+
+		.comment-form-comment {
+			font-size: 0;
+			line-height: 0;
+			margin: 0;
+		}
+
+		.comment-form-name,
+		.comment-form-email,
+		.comment-form-website {
+			margin-top: 20px;
+			font-size: 0;
+			line-height: 0;
+		}
+
+			.comment-respond input[type="text"],
+			.comment-respond textarea {
+				background: #fff;
+				border: 1px solid #eee;
+			}
+
+			.comment-respond textarea {
+				height: 140px;
+			}
+
+		.comment-respond .form-submit {
+			clear: both;
+			padding-top: 20px;
+			margin-bottom: 0;
+		}

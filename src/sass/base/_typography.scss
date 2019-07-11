@@ -1,0 +1,247 @@
+/* ==========================================================================
+/* ===== Typography  ===== */
+/*========================================================================== */
+
+/*--------------------------------------------------------------
+	## Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #444;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Poppins", serif;
+	line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+	color: #292c33;
+	line-height: 1.45;
+	font-weight: 700;
+	font-family: "Roboto";
+}
+
+h1 {
+	font-size: 33px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 27px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 21px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+p:last-child {
+	margin: 0;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	font-size: 19px;
+	font-style: italic;
+	font-family: Georgia, serif;
+	line-height: 1.65;
+	background-image: url("images/blockquote.png");
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	padding: 13px 41px;
+	text-align: center;
+}
+
+	blockquote p:last-child {
+		margin: 0;
+	}
+
+address {
+	margin-bottom: 25px
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	line-height: 1.6;
+	margin-bottom: 25px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+small {
+	font-size: 75%;
+}
+
+/*--------------------------------------------------------------
+	## Elements
+--------------------------------------------------------------*/
+
+body {
+	background: #fff;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #e5e5e5;
+	border: 0;
+	height: 1px;
+	margin-bottom: 25px;
+}
+
+ul,
+ol {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0 0 0 10px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+table {
+	margin-bottom: 25px;
+	width: 100%;
+	line-height: 1;
+}
+
+.widget table {
+	table-layout: fixed;
+}
+
+table thead {
+	background: $accentColor;
+	color: #fff;
+	text-align: left;
+	font-family: "Montserrat";
+}
+
+table td,
+table th {
+	padding: 10px;
+	text-align: left;
+}
+
+table tbody th {
+	background: $accentColor;
+	color: #fff;
+	font-family: "Montserrat";
+}
+
+table tbody th a {
+	color: inherit;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.position-absolute {
+	position: absolute;
+}
+
+
+
+
+/*--------------------------------------------------------------
+	## Links
+--------------------------------------------------------------*/
+
+a {
+	text-decoration: none;
+	color: $accentColor;
+}
