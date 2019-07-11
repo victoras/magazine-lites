@@ -1,4 +1,4 @@
-=== Magazine Lite ===
+=== Magazine Lites ===
 Contributors: victortihai
 Tags: blog, news, grid-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, theme-options, translation-ready
 Requires PHP: 5.6
@@ -8,10 +8,10 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Magazine Lite is a dynamic and visually stunning Free WordPress Theme specially designed for Magazines, Blogs, Fashion & Lifestyle Blogs. The theme is easy to set up and customize, you need just a few clicks, and you can entirely change the look of the website!
+Magazine Lites is a dynamic and visually stunning Free WordPress Theme specially designed for Magazines, Blogs, Fashion & Lifestyle Blogs. The theme is easy to set up and customize, you need just a few clicks, and you can entirely change the look of the website!
 
 == Description ==
-Magazine Lite is a dynamic and visually stunning Free WordPress Theme specially designed for Magazines, Blogs, Fashion & Lifestyle Blogs. The theme is easy to set up and customize, you need just a few clicks, and you can entirely change the look of the website!
+Magazine Lites is a dynamic and visually stunning Free WordPress Theme specially designed for Magazines, Blogs, Fashion & Lifestyle Blogs. The theme is easy to set up and customize, you need just a few clicks, and you can entirely change the look of the website!
 
 == Frequently Asked Questions ==
 
