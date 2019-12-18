@@ -30,7 +30,7 @@
 		}
 
 			/* Top level chevron */
-			#top-bar-navigation .menu a .fa {
+			#top-bar-navigation .menu a .fas {
 				display: inline-block;
 				color: #fff;
 				font-size: 13px;
@@ -170,7 +170,7 @@
 		}
 
 			/* Top level chevron */
-			#navigation .menu a .fa {
+			#navigation .menu a .fas {
 				display: inline-block;
 				color: #fff;
 				font-size: 14px;
@@ -288,15 +288,15 @@
 	float: right;
 }
 
-	#top-bar-mobile-navigation .fa,
-	#mobile-navigation .fa {
+	#top-bar-mobile-navigation .fas,
+	#mobile-navigation .fas {
 		display: inline-block;
 		margin-right: 9px;
 		font-size: 14px;
 		line-height: inherit;
 	}
 
-	#top-bar-mobile-navigation .fa {
+	#top-bar-mobile-navigation .fas {
 		display: block;
 	}
 

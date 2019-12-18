@@ -106,8 +106,8 @@ jQuery(document).ready(function($){
 	magazine_lite_carousel();
 
 	// subnavigation arrows
-	$('#navigation #primary-menu > li:has(ul) > a').append('<span class="fa fa-angle-down"></span>');
-	$('#top-bar #top-bar-menu > li:has(ul) > a').append('<span class="fa fa-angle-down"></span>');
+	$('#navigation #primary-menu > li:has(ul) > a').append('<span class="fas fa-angle-down"></span>');
+	$('#top-bar #top-bar-menu > li:has(ul) > a').append('<span class="fas fa-angle-down"></span>');
 
 	// mobile navigation
 	$('#top-bar-mobile-navigation select, #mobile-navigation select').change(function() {

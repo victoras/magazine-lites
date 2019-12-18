@@ -612,7 +612,7 @@ body.rtl .col-last {
   font-size: 1rem; }
   #top-bar-social a {
     margin-left: 10px; }
-    #top-bar-social a .fa {
+    #top-bar-social a .fab {
       background: transparent;
       color: #fff; }
   #top-bar-social .social-link-twitter:hover .fa {
@@ -723,7 +723,7 @@ body.rtl .col-last {
   margin-right: 25px; }
 
 /* Top level chevron */
-#top-bar-navigation .menu a .fa {
+#top-bar-navigation .menu a .fas {
   display: inline-block;
   color: #fff;
   font-size: 13px;
@@ -848,7 +848,7 @@ body.rtl .col-last {
   margin-right: 0; }
 
 /* Top level chevron */
-#navigation .menu a .fa {
+#navigation .menu a .fas {
   display: inline-block;
   color: #fff;
   font-size: 14px;
@@ -953,14 +953,14 @@ body.rtl .col-last {
   display: none;
   float: right; }
 
-#top-bar-mobile-navigation .fa,
-#mobile-navigation .fa {
+#top-bar-mobile-navigation .fas,
+#mobile-navigation .fas {
   display: inline-block;
   margin-right: 9px;
   font-size: 14px;
   line-height: inherit; }
 
-#top-bar-mobile-navigation .fa {
+#top-bar-mobile-navigation .fas {
   display: block; }
 
 .top-bar-mobile-nav-hook {
@@ -1351,10 +1351,10 @@ body.rtl .col-last {
 .blog-post-single-nav-next .blog-post-single-nav-button {
   float: right; }
 
-.blog-post-single-nav-button .fa {
+.blog-post-single-nav-button .fas {
   margin-right: 10px; }
 
-.blog-post-single-nav-next .fa {
+.blog-post-single-nav-next .fas {
   margin-right: 0;
   margin-left: 10px; }
 

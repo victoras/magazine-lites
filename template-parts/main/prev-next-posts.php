@@ -11,7 +11,7 @@
 			<div class="blog-post-single-nav-prev col col-6">
 
 				<div class="post-s2 init-animation">
-					<a href="<?php echo get_permalink( $custompost_ID ); ?>" class="blog-post-single-nav-button"><span class="fa fa-angle-left"></span><?php esc_html_e( 'Previous Post', 'magazine-lites' ); ?></a>
+					<a href="<?php echo get_permalink( $custompost_ID ); ?>" class="blog-post-single-nav-button"><span class="fas fa-chevron-left"></span><?php esc_html_e( 'Previous Post', 'magazine-lites' ); ?></a>
 				</div><!-- .post-s2 -->
 
 			</div><!-- .blog-post-single-nav-prev -->
@@ -27,7 +27,7 @@
 			<div class="blog-post-single-nav-next col col-6 col-last">
 
 				<div class="post-s2 init-animation">
-					<a href="<?php echo get_permalink( $custompost_ID ); ?>" class="blog-post-single-nav-button"><?php esc_html_e( 'Next Post', 'magazine-lites' ); ?><span class="fa fa-angle-right"></span></a>
+					<a href="<?php echo get_permalink( $custompost_ID ); ?>" class="blog-post-single-nav-button"><?php esc_html_e( 'Next Post', 'magazine-lites' ); ?><span class="fas fa-chevron-right"></span></a>
 				</div><!-- .post-s2 -->
 
 			</div><!-- .blog-post-single-nav-next -->

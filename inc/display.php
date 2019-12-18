@@ -77,7 +77,7 @@ if ( ! function_exists( 'magazine_lite_posts_pagination' ) ) :
 
 						if ( $type == 'loadmore' ) {
 							if ($paged < $pages ) {
-								echo "<li class='pagination-load-more active'><span class='pagination-load-more-line'></span><a href='".get_pagenum_link($paged + 1)."'><span class='fa fa-refresh'></span>" . esc_html__( 'LOAD MORE', 'magazine-lites' ) . "</a></li>";
+								echo "<li class='pagination-load-more active'><span class='pagination-load-more-line'></span><a href='".get_pagenum_link($paged + 1)."'><span class='fas fa-sync-alt'></span>" . esc_html__( 'LOAD MORE', 'magazine-lites' ) . "</a></li>";
 							} else {
 								echo "<li class='pagination-load-more inactive'><span class='pagination-load-more-line'></span><a href='#'>" . esc_html__( 'NO MORE POSTS', 'magazine-lites' ) . "</a></li>";
 							}

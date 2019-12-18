@@ -28,136 +28,138 @@
    *   gulp-rigger                : Include any type of text file (css, js, hmtl)
    *   gulp-combine-mq            : Combine matching media queries into one media query definition
    *   gulp-plumber               : Briefly it replaces pipe method and removes standard onerror
-                                    handler on error event, which unpipes streams on error by default.
+									handler on error event, which unpipes streams on error by default.
    */
 
 // include gulp and gulp plug-ins
 var gulp = require('gulp'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cache = require('gulp-cache'),
-    //cmq = require('gulp-combine-mq'),
-    concat = require('gulp-concat'),
-    del = require('del'),
-    jshint = require('gulp-jshint'),
-    cleancss = require('gulp-clean-css'),
-    notify = require('gulp-notify'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename'),
-    rigger = require('gulp-rigger'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    wpPot = require('gulp-wp-pot'),
-    uglify = require('gulp-uglify');
+	autoprefixer = require('gulp-autoprefixer'),
+	cache = require('gulp-cache'),
+	//cmq = require('gulp-combine-mq'),
+	concat = require('gulp-concat'),
+	del = require('del'),
+	jshint = require('gulp-jshint'),
+	cleancss = require('gulp-clean-css'),
+	notify = require('gulp-notify'),
+	plumber = require('gulp-plumber'),
+	rename = require('gulp-rename'),
+	rigger = require('gulp-rigger'),
+	sass = require('gulp-sass'),
+	sourcemaps = require('gulp-sourcemaps'),
+	wpPot = require('gulp-wp-pot'),
+	uglify = require('gulp-uglify');
 
-var autoprefixerOptions = {
-  browsers: ['last 2 version']
-};
+var onError = function(err) {
+	console.log(err);
+}
+
+function clean() {
+	return del( [paths.assets_css, paths.assets_js, paths.lang_folder, paths.assets_font]);
+}
 
 
 var paths = {
-     home: './',
-     assets_css: './assets/styles/',
-     assets_js: './assets/javascripts/',
-     assets_font: './assets/fonts/',
-     src_css_fe: './src/sass/',
-     src_js: './src/javascripts/',
-     node_libs: ['./node_modules/foundation-sites/scss/', './node_modules/motion-ui/src'],
-    };
+	 home: './',
+	 assets_css: './assets/styles/',
+	 assets_js: './assets/javascripts/',
+	 assets_font: './assets/webfonts/',
+	 src_css_fe: './src/sass/',
+	 lang_folder: './languages/',
+	 src_js: './src/javascripts/',
+	 node_libs: ['./node_modules/foundation-sites/scss/', './node_modules/motion-ui/src'],
+	};
 
-var onError = function(err) {
-         console.log(err);
-    }
 
  // Vendors
-gulp.task('styles:v', function() {
-  return gulp.src([ paths.src_css_fe + 'vendors.scss'])
-    .pipe(plumber({errorHandler: onError}))
-    .pipe(sourcemaps.init())
-    .pipe(sass({ includePaths : paths.node_libs, style: 'expanded', errLogToConsole: true }))
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(gulp.dest(paths.assets_css))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cleancss())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.assets_css))
-    .pipe(notify({ message: 'Styles task complete: <%= file.relative %>!' }));
-});
+function vendorStyles() {
+	return gulp
+	.src([ paths.src_css_fe + 'vendors.scss'])
+	.pipe(plumber({errorHandler: onError}))
+	.pipe(sourcemaps.init())
+	.pipe(sass({ includePaths : paths.node_libs, style: 'expanded', errLogToConsole: true }))
+	.pipe(autoprefixer({ cascade: true }))
+	.pipe(gulp.dest(paths.assets_css))
+	.pipe(rename({ suffix: '.min' }))
+	.pipe(cleancss())
+	.pipe(sourcemaps.write('.'))
+	.pipe(gulp.dest(paths.assets_css))
+	.pipe(notify({ message: 'Styles task complete: <%= file.relative %>!' }));
+}
 
  // Main CSS
-gulp.task('styles', function() {
-  return gulp.src([paths.src_css_fe + 'style.scss'])
-    .pipe(plumber({errorHandler: onError}))
-    .pipe(sourcemaps.init())
-    .pipe(sass({ includePaths : paths.node_libs, style: 'expanded', errLogToConsole: true }))
-    .pipe(autoprefixer(autoprefixerOptions))
-    //.pipe(cleancss())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.home))
-    .pipe(notify({ message: 'Styles task complete: <%= file.relative %>!' }));
-});
+function styles() {
+	return gulp
+	.src([paths.src_css_fe + 'style.scss'])
+	.pipe(plumber({errorHandler: onError}))
+	.pipe(sourcemaps.init())
+	.pipe(sass({ includePaths : paths.node_libs, style: 'expanded', errLogToConsole: true }))
+	.pipe(autoprefixer({ cascade: true }))
+	//.pipe(cleancss())
+	.pipe(sourcemaps.write('.'))
+	.pipe(gulp.dest(paths.home))
+	.pipe(notify({ message: 'Styles task complete: <%= file.relative %>!' }));
+}
 
 // Scripts
-gulp.task('scripts', function() {
-  return gulp.src( paths.src_js + '*.js')
-    .pipe(rigger())
-    .pipe(gulp.dest(paths.assets_js))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
-    .pipe(gulp.dest(paths.assets_js))
-    .pipe(notify({ message: 'Scripts task complete: <%= file.relative %>!' }));
-});
+function scripts() {
+	return gulp
+	.src( paths.src_js + '*.js')
+	.pipe(rigger())
+	.pipe(gulp.dest(paths.assets_js))
+	.pipe(rename({ suffix: '.min' }))
+	.pipe(uglify())
+	.pipe(gulp.dest(paths.assets_js))
+}
 
+function copyFonts() {
+	return gulp
+	.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
+	.pipe(gulp.dest(paths.assets_font))
+	.pipe(notify({ message: 'Copy Fonts: <%= file.relative %>!' }));
+}
 
-gulp.task('copyfonts', function () {
-    return gulp.src('./node_modules/font-awesome/fonts/*')
-      .pipe(gulp.dest(paths.assets_font))
-      .pipe(notify({ message: 'Copy Fonts: <%= file.relative %>!' }));
-});
-
-gulp.task('copyjs', function () {
-    return gulp.src([
+// Copy vendorScripts
+function vendorScripts() {
+	return gulp
+	.src([
 		'./node_modules/owl.carousel/dist/owl.carousel.min.js',
-        './node_modules/owl.carousel/dist/owl.carousel.js',
+		'./node_modules/owl.carousel/dist/owl.carousel.js',
 		//'./node_modules/masonry-layout/dist/masonry.pkgd.min.js',
-        //'./node_modules/masonry-layout/dist/masonry.pkgd.js',
-      ])
-      .pipe(gulp.dest(paths.assets_js))
-      .pipe(notify({ message: 'Copy JavaScripts: <%= file.relative %>!' }));
-});
+		//'./node_modules/masonry-layout/dist/masonry.pkgd.js',
+	  ])
+	  .pipe(gulp.dest(paths.assets_js))
+	  .pipe(notify({ message: 'Copy JavaScripts: <%= file.relative %>!' }));
+}
 
 // Pot
-gulp.task('genpot', function () {
-    return gulp.src('**/*.php')
-        .pipe(wpPot( {
-            domain: 'magazine-lites',
-            package: 'Magazine Lites WordPress Theme'
-        } ))
-        .pipe(gulp.dest('languages/magazine-lites.pot'))
-        .pipe(notify({ message: 'Generated -> Pot File!' }));
-});
-
-// Clean
-gulp.task('clean', function(cb) {
-    del([ paths.assets_font + '*', paths.assets_css + '*', paths.assets_js + '*', paths.home + 'style.+(css|css.map)'], {force: true}, cb)
-});
-
-// Default task
-gulp.task('default', [ 'clean', 'styles:v', 'styles', 'scripts', 'copyfonts', 'copyjs', 'genpot'], function() {
-    gulp.start('styles', 'scripts');
-});
+function genPot() {
+	return gulp
+	.src('**/*.php')
+	.pipe(wpPot( {
+		domain: 'magazine-lites',
+		package: 'Magazine Lites WordPress Theme'
+	} ))
+	.pipe(gulp.dest('languages/magazine-lites.pot'))
+	.pipe(notify({ message: 'Generated -> Pot File!' }));
+}
 
 
-// Watch
-gulp.task('watch', function() {
 
-  // Watch .scss files
-  gulp.watch([ paths.src_css_fe + '**/*.scss'], ['styles:v', 'styles']);
-  // gulp.watch([ paths.src_css_fe + 'style.scss'], ['styles']);
+function watch() {
+	gulp.watch(paths.src_js, scripts);
+	gulp.watch(paths.src_css_fe, styles);
+	gulp.watch(paths.src_css_fe, vendorStyles);
+}
 
-  // Watch gulpfile files
-  gulp.watch('gulpfile.js', ['styles', 'styles:v', 'scripts', 'copyfonts', 'copyjs', 'genpot']);
+var build = gulp.series(clean, gulp.parallel(styles, vendorStyles, scripts, copyFonts, vendorScripts, genPot));
 
-  // Watch .js files
-  gulp.watch( paths.src_js + '*.js', ['scripts']);
-
-});
+exports.clean = clean;
+exports.styles = styles;
+exports.vendorStyles = vendorStyles;
+exports.scripts = scripts;
+exports.vendorScripts = vendorScripts;
+exports.copyFonts = copyFonts;
+exports.genPot = genPot;
+exports.watch = watch;
+exports.build = build;
+exports.default = build;
